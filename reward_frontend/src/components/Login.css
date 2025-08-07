@@ -1,0 +1,60 @@
+.login-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 97vh;
+  background: var(--bg-primary, #fff);
+}
+.login-card {
+  border-radius: 18px;
+  background: var(--bg-secondary, #f3f4f6);
+  box-shadow: 0 10px 40px 3px rgba(31,50,105,0.10);
+  min-width: 320px;
+  max-width: 96vw;
+  padding: 34px 35px 25px 35px;
+  text-align: center;
+}
+.login-card h2 {
+  color: var(--primary, #1d4ed8);
+  margin-bottom: 1.8em;
+  margin-top: 0;
+}
+.login-card input[type="email"] {
+  width: 94%;
+  padding: 13px;
+  border-radius: 7px;
+  border: 1px solid var(--border-color, #c6d3e1);
+  margin-bottom: 12px;
+  font-size: 1.07em;
+  background: #fff;
+  color: #222;
+}
+.login-btn {
+  background: var(--primary, #1d4ed8);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 42px;
+  font-size: 1.08em;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.22s;
+}
+.login-btn:hover {
+  background: var(--accent, #f59e42);
+}
+.error-msg {
+  color: red;
+  margin-bottom: 9px;
+  font-size: 0.97em;
+}
+.login-help {
+  margin-top: 20px;
+  color: var(--text-secondary, #444);
+  font-size: 0.98em;
+}
+
+@media (max-width: 650px) {
+  .login-card { min-width: 83vw; padding: 14px 5vw 8px 5vw;}
+}
